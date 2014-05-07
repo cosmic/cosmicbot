@@ -2,6 +2,7 @@
 
 Robot IRC avec les commandes suivantes :
 
+    !help : liste des commandes
     !grébige : nombre de jours depuis la dernière fois que le web a rempli ses heures
 
 ## Installation
