@@ -7,4 +7,5 @@ Dotenv.load
 require "cosmicbot/version"
 require "cosmicbot/hash_addons"
 require "cosmicbot/grebige"
+require "cosmicbot/meuh"
 require "cosmicbot/bot"

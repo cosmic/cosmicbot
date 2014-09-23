@@ -7,7 +7,7 @@ module Cosmicbot
           c.nick = "cosmicbot"
           c.server = "irc.freenode.org"
           c.channels = [ENV['COSMIC_CHANNEL']]
-          c.plugins.plugins = [Grebige::Plugin]
+          c.plugins.plugins = [Grebige::Plugin, Meuh::Plugin]
         end
       end
     end
