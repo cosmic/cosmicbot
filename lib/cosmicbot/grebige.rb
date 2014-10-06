@@ -10,7 +10,7 @@ module Cosmicbot
 
       match "grébige"
       def execute(m)
-        Hours.new.web_days_since.each do |login, days|
+        Hours.new.days_since.each do |login, days|
           m.reply "#{login}: il y a #{days} jours"
         end
       end
@@ -22,7 +22,7 @@ module Cosmicbot
     end
 
     class Hours
-      def web_days_since
+      def days_since
         web = ENV['GREBIGE_USERS'].split(' ')
         web_hours = hours.select { |login, _| web.include?(login) }
         web_hours.map { |login, time|
@@ -42,10 +42,6 @@ module Cosmicbot
         hours = JSON.parse(json)
         hours = hours.select { |_, time| time }
         hours.hashmap { |login, time| [login, Time.parse(time.to_s)] }
-      end
-
-      def to_hash(h)
-        Hash[*h.flatten]
       end
     end
   end
