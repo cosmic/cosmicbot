@@ -26,14 +26,14 @@ module Cosmicbot
         web = ENV['GREBIGE_USERS'].split(' ')
         web_hours = hours.select { |login, _| web.include?(login) }
         web_hours.map { |login, time|
-          [login, days_since(time)]
+          [login, calc_days_since(time)]
         }.sort
       end
 
 
       private
 
-      def days_since(date)
+      def calc_days_since(date)
         ((Time.now - date) / 60 / 60 / 24).floor
       end
 
