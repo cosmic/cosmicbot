@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Cosmicbot::VERSION
   spec.authors       = ["Sunny Ripert"]
   spec.email         = ["sunny@sunfox.org"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Cosmic IRC Bot}
+  spec.summary       = %q{Cosmic IRC Bot}
+  spec.homepage      = "https://github.com/cosmic/cosmicbot"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

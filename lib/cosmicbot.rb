@@ -1,6 +1,10 @@
 # coding: utf-8
+require 'rubygems'
+require 'bundler/setup'
+
 require "dotenv"
 require "cinch"
+require "meuh/cinch_plugin"
 
 Dotenv.load
 
